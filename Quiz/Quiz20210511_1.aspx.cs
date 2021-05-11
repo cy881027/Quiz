@@ -14,13 +14,8 @@ namespace Quiz {
             {
                 s_Name = (string)Session["Name"];
                 s_ID = (string)Session["ID"];
-                Response.Write(s_ID + "<br/>" + s_Name);
+                Response.Write(Session["Name"]+ "<br/>" + Session["ID"]);
             }
-            else
-            {
-                Label1.Text = "沒有東西啦qq";
-            }
-            Response.Write(s_ID + "<br/>" + s_Name);
         }
     }
 }

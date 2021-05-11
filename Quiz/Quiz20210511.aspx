@@ -15,7 +15,7 @@
                 <br />
                 <asp:TextBox ID="tb_Name" runat="server"></asp:TextBox>
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="送出" OnClick="Button1_Click" PostBackUrl="~/Quiz20210511_1.aspx" />
+                <asp:Button ID="Button1" runat="server" Text="送出" OnClick="Button1_Click" />
             </div>
         </div>
     </form>
