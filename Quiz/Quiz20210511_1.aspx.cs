@@ -10,18 +10,17 @@ namespace Quiz {
         protected void Page_Load(object sender, EventArgs e) {
             string s_ID = "";
             string s_Name = "";
-            
-            s_Name = (string)Session["Name"];
-            Label1.Text = s_ID + "</br>" + s_Name;
             if(Session["ID"] != null)
             {
+                s_Name = (string)Session["Name"];
                 s_ID = (string)Session["ID"];
-                Label1.Text = s_ID;
+                Response.Write(s_ID + "<br/>" + s_Name);
             }
             else
             {
                 Label1.Text = "沒有東西啦qq";
             }
+            Response.Write(s_ID + "<br/>" + s_Name);
         }
     }
 }
