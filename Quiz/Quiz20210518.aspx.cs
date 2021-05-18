@@ -22,7 +22,6 @@ namespace Quiz
                 "User ID = sa ; Password = 12345";
             try
             {
-
                 SqlConnection o_Conn = new SqlConnection(s_ConnS);
                 o_Conn.Open();
                 SqlCommand o_data = new SqlCommand("INSERT INTO Users VALUES(3,N'雅每每','2021/11/11')", o_Conn);
